@@ -1,0 +1,134 @@
+.tour_img {
+    position: relative;
+}
+
+.tour_img img {
+    display: block;
+    width: 93%;
+    height: 210px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tour_img span {
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0;
+}
+
+.featured-tag {
+    font-size: 14px;
+    object-fit: cover;
+}
+
+.card_top span i {
+    color: var(--secondary-color);
+}
+
+.tour_rating {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.tour_location {
+    color: var(--heading-color);
+    font-weight: 500;
+    margin-right: 45%;
+    font-size: 0.9rem;
+}
+
+.tour_rating i,
+.tour_location i {
+    font-size: 1rem;
+}
+
+.tour_title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.tour_title a {
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+.tour_title a:hover {
+    color: var(--secondary-color);
+}
+
+.tour_card {
+    margin-bottom: 40%;
+    width: 106%;
+    height: 350px;
+    border-radius: 5px;
+    margin-top: -16px;
+    margin-left: -18px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.Card {
+    /* border: none !important; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    height: 90%;
+}
+
+.custom-card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card_bottom_wrapper {
+    margin-top: -90px;
+}
+
+.card_bottom h5 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card_bottom h5 span {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+
+
+.booking_btn {
+    background: var(--secondary-color) !important;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem !important;
+}
+
+.btn {
+    margin-left: 100px;
+}
+
+.booking_btn a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.booking_btn a:hover {
+    color: white;
+}
+
+.icon {
+    cursor: pointer;
+    color: red;
+}
+
+.changeCount {
+    margin-top: 90px;
+}

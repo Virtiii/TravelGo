@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.container .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  /* animation: animate 10s linear infinite; */
+}
+
+.container .slider .slide {
+  position: relative;
+  width: 20%;
+  height: 105%;
+  float: left;
+}
+
+.container .slider .slide .caption {
+  top: 40px;
+  position: absolute;
+  bottom: 350px;
+  left: 60px;
+  right: 60px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container .slider .slide .caption h2 {
+  margin: 0 0 20;
+  padding: 0;
+  color: #fff;
+  font-size: 48px;
+  transition: 0.5s;
+}
+
+.container .slider .slide .caption p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2.2rem;
+  transition: 0.5s;
+}
+
+.name {
+  text-transform: uppercase;
+  background-image: linear-gradient(-90deg,
+      #ff0000,
+      #ffff00,
+      #ff00f3,
+      #0033ff,
+      #ff00c4,
+      #ff0000);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 100%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animated-button {
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 30px;
+  background-color: white;
+  color: blue;
+  border-radius: 250px;
+  border: 2px solid blue;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  top: 5%;
+}
+
+.animated-button:hover {
+  background-color: blue;
+  color: white;
+  transform: scale(1.05);
+}
+
+.animated-button:hover:before {
+  content: "➜";
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  color: white;
+}
+
+.container .slider .slide.slide1 {
+  background: url(/src/assets/images/3d-abstract-travel-wallpaper-awesome-rxo3qqiqy1uw5mcm.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide2 {
+  background: url(/src/assets/images/1776125550.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide3 {
+  background: url(/src/assets/images/1318039.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide4 {
+  background: url(/src/assets/images/185290.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .animated-button {
+    top: -2.5%;
+  }
+}
+
+@media (max-width: 1306px) {
+  .container .slider .slide {
+    height: 120%
+  }
+}
+@media (max-width: 700px) {
+  .container .slider .slide {
+    height: 140%
+  }
+  .animated-button {
+    top: 2%;
+  }
+}
+@media (max-width: 578px) {
+  .container .slider .slide .caption p {
+    font-size: 38px;
+  }
+  .container .slider .slide {
+    height: 152%
+  }
+  .container .slider .slide .caption p {
+    line-height: 55px;
+  }
+}
+@media (max-width: 470px) {
+h2{
+  line-height: 68px;
+}
+}
+@media (max-width: 443px) {
+  .container .slider .slide .caption p{
+    font-size: 25px;
+    line-height: 45px;
+  }
+  }
+@media (max-width: 405px) {
+  .container .slider .slide {
+    height: 150%;
+  }
+  .container .slider .slide .caption p {
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .container .slider .slide .caption  h2{
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+}
