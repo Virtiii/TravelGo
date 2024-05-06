@@ -55,9 +55,15 @@ const TourList = ({ tour }) => {
                                     : (<span>({reviews.length})</span>)
                                 }
                             </span>
+                            
                         </div>
 
-                        <h5 className="tour_title"><Link to={`/tours/${id}`}>{title}</Link></h5>
+                        <h5 className="tour_title" id="title">
+                        <Link to={`/tours/${id}`}>
+                            {title}
+                        </Link>
+                        </h5>
+
 
                         <div className="card_bottom d-flex align-items-center justify-content-center mt-3">
                             <h5>${price} <span>/per person</span></h5>

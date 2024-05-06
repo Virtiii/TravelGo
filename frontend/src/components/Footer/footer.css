@@ -1,9 +1,21 @@
-.footer{
+/* .footer{
     background-color: black;
     color: white;
     margin-top: 257%;
-    /* margin-bottom: 80%; */
+} */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: 257%;
 }
+
+/* .layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+} */
 
 .footer_quick-links{
     margin-top: 18%;
@@ -18,9 +30,6 @@
     width: 28%;
     margin-bottom: 1rem;
     
-}
-
-.footer .logo p{
 }
 
 .social_links span a{

@@ -1,0 +1,28 @@
+.thank_you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.thank_you span i {
+    font-size: 4rem;
+    color: green;
+}
+
+.thank_you h1 {
+    font-size: 3.6rem;
+    font-family: var(--subtitle-font-name);
+    margin-bottom: 0.5rem; 
+}
+
+.thank_you h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn.primary__btn {
+    margin-top: 1rem;
+    margin-left: -0.5%; 
+}

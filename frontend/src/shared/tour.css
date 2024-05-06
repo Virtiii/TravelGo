@@ -59,9 +59,10 @@
     color: var(--heading-color);
 }
 
-.tour_title a:hover {
+/* .tour_title a:hover {
     color: var(--secondary-color);
-}
+} */
+
 
 .tour_card {
     margin-bottom: 40%;
@@ -72,6 +73,7 @@
     margin-left: -18px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    cursor: pointer;
 }
 
 .Card {
