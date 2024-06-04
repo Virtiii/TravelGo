@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
@@ -27,6 +28,9 @@ const Home = () => {
     const toRotate = [" memories.", " adventures.", " experiences.", " friendships."];
     const period = 1500; // Adjusted period for smoother animation
 
+    const [routingCompleted, setRoutingCompleted] = useState(false); // State to track routing completion
+    const location = useLocation(); // Get current location from react-router-dom
+
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
@@ -34,6 +38,11 @@ const Home = () => {
 
         return () => { clearInterval(ticker) };
     }, [text, delta])
+
+    useEffect(() => {
+        // Check if the location changes and set the routing completion state accordingly
+        setRoutingCompleted(true);
+    }, [location]);
 
     const tick = () => {
         let i = loopNum % toRotate.length;
